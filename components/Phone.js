@@ -1,6 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
-import sam from "../public/sam.jpg";
 
 function Phone() {
   return (
@@ -11,7 +9,7 @@ function Phone() {
           <div className="artboard artboard-demo phone-1">
             <h2 className="text-3xl font-bold mb-4">Connect</h2>
             <div className="flex gap-4">
-              <Link href="https://twitter.com/sjfortin">
+              <Link href="https://twitter.com/quasi_askew">
                 <a>
                   <svg
                     className="w-6 h-6 text-blue-300 fill-current"
@@ -22,7 +20,7 @@ function Phone() {
                   </svg>
                 </a>
               </Link>
-              <Link href="https://twitter.com/sjfortin">
+              <Link href="https://www.linkedin.com/in/samfortin/">
                 <a>
                   <svg
                     className="w-6 h-6 text-blue-500 fill-current"

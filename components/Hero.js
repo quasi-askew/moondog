@@ -19,7 +19,7 @@ function Hero() {
                 />
               </div>
             </div>
-            <h1 className="text-5xl font-bold">Sam Fortin</h1>
+            <h1 className="text-5xl font-bold">Sam</h1>
             <p className="py-6">
               Web Developer in Minneapolis, MN. Currently working in ecommerce
               and building in Shopify and Headless ecomm API environments.

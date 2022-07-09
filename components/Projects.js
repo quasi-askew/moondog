@@ -1,39 +1,23 @@
-import ProjectCard from "./ProjectCard";
+import { projects } from "../lib/projects";
 
 function Projects() {
   return (
-    <div className="container mx-auto py-8">
-			<h2 className="text-5xl font-bold text-center mb-6">Some Projects and Stuff</h2>
-      <div className="grid gap-6 grid-cols-1 justify-items-center">
-        <ProjectCard
-          imageSrc="https://api.lorem.space/image/shoes?w=400&h=400"
-          projectName="Project 1"
-          primaryBadge="New"
-          badges={["Badge1", "Badge2"]}
-          description="This is a description"
-        />
-        <ProjectCard
-          imageSrc="https://api.lorem.space/image/shoes?w=400&h=400"
-          projectName="Project 1"
-          primaryBadge="New"
-          badges={["Badge1", "Badge2"]}
-          description="This is a description"
-        />
-        <ProjectCard
-          imageSrc="https://api.lorem.space/image/shoes?w=400&h=400"
-          projectName="Project 1"
-          primaryBadge="New"
-          badges={["Badge1", "Badge2"]}
-          description="This is a description"
-        />
-        <ProjectCard
-          imageSrc="https://api.lorem.space/image/shoes?w=400&h=400"
-          projectName="Project 1"
-          primaryBadge="New"
-          badges={["Badge1", "Badge2"]}
-          description="This is a description"
-        />
-      </div>
+    <div className="grid grid-cols-4 gap-4">
+      {projects.map((project) => {
+        return (
+          <div key={project.name} className="card w-96 bg-base-100 shadow-xl">
+            <div className="card-body">
+              <h2 className="card-title">{project.name}</h2>
+              <p>{project.desc}</p>
+              <div className="card-actions justify-end">
+                <a href={project.url} className="btn btn-primary">
+                  {project.url}
+                </a>
+              </div>
+            </div>
+          </div>
+        );
+      })}
     </div>
   );
 }

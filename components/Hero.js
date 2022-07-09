@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import sam from "../public/sam.jpg";
+import { projects } from "../lib/projects";
 
 function Hero() {
   return (
@@ -27,17 +28,6 @@ function Hero() {
             <Link href="https://linktr.ee/sam.fortin">
               <a className="btn">Linktree</a>
             </Link>
-            <div className="mockup-code mt-4">
-              <pre data-prefix="$">
-                <code>npm i daisyui</code>
-              </pre>
-              <pre data-prefix=">" className="text-warning">
-                <code>installing...</code>
-              </pre>
-              <pre data-prefix=">" className="text-success">
-                <code>Done!</code>
-              </pre>
-            </div>
           </div>
         </div>
       </div>

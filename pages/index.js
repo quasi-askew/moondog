@@ -5,7 +5,7 @@ import Projects from "../components/Projects";
 
 export default function Home() {
   return (
-    <div>
+    <>
       <Head>
         <title>Sam Fortin</title>
         <meta name="description" content="A spot for Sam\'s content" />
@@ -14,9 +14,9 @@ export default function Home() {
 
       <main>
         <Hero />
-        <Projects />
+        {/* <Projects /> */}
       </main>
         <Footer />
-    </div>
+    </>
   );
 }
